@@ -1,1 +1,12 @@
 .venv
+
+# Data files (don't commit large/raw datasets)
+data/
+*.csv
+
+
+
+# Ignore Python cache files
+__pycache__/
+*.py[cod]
+*.pyo

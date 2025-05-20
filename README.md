@@ -16,6 +16,15 @@ This challenge assesses your practical skills in:
 
 ---
 
+## 🚀 Deliverables
+
+- ✅ Data profiling and cleaning for Benin, Sierra Leone, and Togo
+- ✅ Outlier detection and handling using Z-score
+- ✅ Exploratory Data Analysis (EDA) on irradiance and sensor data
+- ✅ Cross-country comparison of solar potential
+- ✅ Statistical testing using ANOVA
+- ✅ Interactive dashboard built using Streamlit
+
 ## Setup Instructions
 
 Follow these steps to set up your local development environment.
@@ -51,27 +60,49 @@ pip install -r requirements.txt
 
 ---
 
+## ▶️ Usage
+
+To run the interactive dashboard:
+
+```bash
+streamlit run app.py
+
+##This will launch the dashboard in your browser at http://localhost:8501. ##
+
+
+
 ## 📁 Project Structure
 
 ```
-├── .vscode/               # VS Code settings
-│   └── settings.json
-├── .github/               # GitHub Actions workflows
-│   └── workflows/
-│       └── ci.yml
-├── src/                   # Core source code
-├── notebooks/             # Jupyter notebooks for EDA
-│   └── README.md
-├── scripts/               # Utility scripts
-│   └── README.md
-├── tests/                 # Unit tests
-├── .gitignore             # Files/folders to ignore in Git
-├── requirements.txt       # Python dependencies
-├── README.md              # This documentation
-```
+
+├── .github/ # GitHub Actions workflows
+│ └── workflows/
+├── .venv/ # Python virtual environment (excluded in .gitignore)
+├── data/ # Raw solar datasets
+│ ├── benin-malanville.csv
+│ ├── sierraleone-bumbuna.csv
+│ └── togo-dapaong_qc.csv
+│ ├── benin_clean.csv
+│ ├── sierraleone_clean.csv
+│ └── togo_clean.csv
+├── notebooks/ # Jupyter notebooks for EDA and comparison
+│ ├── benin_eda.ipynb
+│ ├── sierraleone_eda.ipynb
+│ ├── togo_eda.ipynb
+│ └── compare_countries.ipynb
+├── scripts/ # Utility or analysis scripts
+│ └── README.md
+├── app.py # Streamlit dashboard app
+├── .gitignore # Files/folders to ignore in Git
+├── requirements.txt # Python dependencies
+└── README.md # Project documentation
 
 ---
 
 ## 📬 License
 
 This repository is part of the **10 Academy Training Program** and is provided for educational and assessment purposes only.
+
+```
+
+```

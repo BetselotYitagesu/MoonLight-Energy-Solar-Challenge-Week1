@@ -46,7 +46,7 @@ with tab2:
     summary.columns = ['_'.join(col) for col in summary.columns]
     st.dataframe(summary.style.format("{:.2f}"))
 
-    # Bonus: Bar chart of average GHI
+    # Bar chart of average GHI
     st.subheader("Average GHI by Country")
     avg_ghi = df.groupby('Country')['GHI'].mean().sort_values(ascending=False)
     fig, ax = plt.subplots()
